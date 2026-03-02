@@ -109,6 +109,308 @@
         { "q": "How much should I invest in SIP vs lump sum?", "a": "Use SIP for your regular monthly savings (e.g., 20-30% of income). Use lump sum for windfall amounts like bonuses, maturity proceeds, or inheritance. For lump sum over Rs 5 Lakh, consider Systematic Transfer Plan (STP) to gradually move from debt to equity." },
         { "q": "What is Systematic Transfer Plan (STP)?", "a": "STP is a strategy where you invest a lump sum in a debt fund and systematically transfer a fixed amount to an equity fund monthly. It combines the benefits of lump sum (immediate deployment) with SIP (rupee cost averaging). STP is ideal for large lump sum amounts in volatile markets." }
       ]
+    },
+    {
+      "slug": "how-sip-works",
+      "title": "How SIP Works — Complete Beginner's Guide (2026)",
+      "description": "Learn how SIP (Systematic Investment Plan) works in 2026. Understand rupee cost averaging, compounding, step-up SIP, SIP vs RD, and how Rs 5,000/month can grow to lakhs.",
+      "keywords": "how sip works, what is sip, sip explained, systematic investment plan guide, rupee cost averaging, sip for beginners, sip compounding",
+      "heroTitle": "How SIP Works",
+      "heroSub": "Everything you need to know about Systematic Investment Plans. From basics to advanced strategies, this guide covers it all.",
+      "contentType": "guide",
+      "ctaText": "Calculate SIP Returns",
+      "ctaLink": "/",
+      "guideContent": [
+        {
+          "type": "h2",
+          "text": "What is a SIP (Systematic Investment Plan)?"
+        },
+        {
+          "type": "p",
+          "text": "A Systematic Investment Plan (SIP) is a method of investing a fixed amount of money at regular intervals — typically monthly — into a mutual fund scheme. Instead of investing a large lump sum at once, SIP allows you to invest small amounts consistently over time. Think of it like a recurring deposit at a bank, but instead of earning a fixed interest rate, your money is invested in the stock market through a professionally managed mutual fund."
+        },
+        {
+          "type": "p",
+          "text": "SIP is offered by every mutual fund house in India, including SBI Mutual Fund, HDFC AMC, Mirae Asset, ICICI Prudential, and others. You can start a SIP with as little as Rs 500 per month, and your bank account is auto-debited on a fixed date each month. The amount is used to purchase mutual fund units at the prevailing NAV (Net Asset Value) on that date."
+        },
+        {
+          "type": "h2",
+          "text": "How Monthly SIP Investing Works"
+        },
+        {
+          "type": "p",
+          "text": "When you set up a SIP, you choose a mutual fund scheme, a monthly amount, and a debit date. On that date every month, the chosen amount is debited from your bank account and invested in the fund. The number of units you receive depends on the NAV on that day."
+        },
+        {
+          "type": "p",
+          "text": "For example, if you invest Rs 5,000 per month and the NAV is Rs 50, you get 100 units. Next month, if the NAV drops to Rs 40, you get 125 units for the same Rs 5,000. When the NAV rises to Rs 60, you get about 83 units. Over time, this averaging effect smooths out market volatility and reduces the average cost per unit."
+        },
+        {
+          "type": "h2",
+          "text": "Rupee Cost Averaging — The Core Advantage of SIP"
+        },
+        {
+          "type": "p",
+          "text": "Rupee cost averaging is the single biggest advantage of SIP over lump sum investing. Since you invest a fixed amount every month regardless of market conditions, you automatically buy more units when prices are low and fewer units when prices are high. This eliminates the need to time the market."
+        },
+        {
+          "type": "h3",
+          "text": "Rupee Cost Averaging Example"
+        },
+        {
+          "type": "table",
+          "headers": ["Month", "NAV (Rs)", "Amount Invested", "Units Purchased"],
+          "rows": [
+            ["January", "50", "Rs 5,000", "100.00"],
+            ["February", "40", "Rs 5,000", "125.00"],
+            ["March", "45", "Rs 5,000", "111.11"],
+            ["April", "55", "Rs 5,000", "90.91"],
+            ["May", "60", "Rs 5,000", "83.33"],
+            ["June", "50", "Rs 5,000", "100.00"],
+            ["Total", "-", "Rs 30,000", "610.35"]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In the example above, the average NAV over 6 months was Rs 50, but your average cost per unit is only Rs 49.15 (Rs 30,000 / 610.35 units). This is the power of rupee cost averaging — you end up with a lower average purchase price than the simple average market price."
+        },
+        {
+          "type": "h2",
+          "text": "Power of Compounding — Rs 5,000/month for 20 Years"
+        },
+        {
+          "type": "p",
+          "text": "Compounding is what makes SIP truly powerful over long periods. Your returns earn returns, and those returns earn further returns. The longer you stay invested, the more dramatic the compounding effect becomes."
+        },
+        {
+          "type": "p",
+          "text": "Consider a SIP of Rs 5,000 per month at 12% expected annual return. Here is what your investment looks like over different time horizons:"
+        },
+        {
+          "type": "table",
+          "headers": ["Duration", "Total Invested", "Estimated Value", "Wealth Gained"],
+          "rows": [
+            ["5 Years", "Rs 3,00,000", "Rs 4,12,432", "Rs 1,12,432"],
+            ["10 Years", "Rs 6,00,000", "Rs 11,61,695", "Rs 5,61,695"],
+            ["15 Years", "Rs 9,00,000", "Rs 25,22,879", "Rs 16,22,879"],
+            ["20 Years", "Rs 12,00,000", "Rs 49,95,740", "Rs 37,95,740"]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Notice how in 20 years, your total investment of Rs 12 lakh grows to nearly Rs 50 lakh. The wealth gained (Rs 37.96 lakh) is more than three times your total investment. This is the compounding effect — your money works harder the longer it stays invested."
+        },
+        {
+          "type": "h2",
+          "text": "Step-Up SIP — Increase Your SIP Amount Every Year"
+        },
+        {
+          "type": "p",
+          "text": "A Step-Up SIP (also called Top-Up SIP) is a variation where you increase your SIP amount by a fixed percentage or fixed amount every year. As your income grows over time, increasing your SIP amount ensures your investments keep pace with your earning potential."
+        },
+        {
+          "type": "p",
+          "text": "For example, if you start with Rs 5,000/month and increase by 10% every year, your SIP amount in Year 2 becomes Rs 5,500, Year 3 becomes Rs 6,050, and so on. Over 20 years at 12% returns, a step-up SIP of Rs 5,000 with 10% annual increase grows to approximately Rs 1.06 crore — more than double the Rs 49.96 lakh from a flat SIP."
+        },
+        {
+          "type": "p",
+          "text": "Most major AMCs in India support step-up SIP through their apps and websites. You can set up automatic annual increases when registering your SIP mandate. The typical step-up range is 5% to 25% per year."
+        },
+        {
+          "type": "h2",
+          "text": "SIP vs Recurring Deposit (RD) — Which is Better?"
+        },
+        {
+          "type": "p",
+          "text": "SIP and Recurring Deposits are both monthly investment options, but they differ fundamentally in returns, risk, and tax treatment."
+        },
+        {
+          "type": "table",
+          "headers": ["Factor", "SIP (Mutual Fund)", "Recurring Deposit (RD)"],
+          "rows": [
+            ["Expected Returns", "12-15% p.a. (equity, not guaranteed)", "6-7% p.a. (fixed, guaranteed)"],
+            ["Risk Level", "Market-linked (moderate to high)", "Zero risk (guaranteed returns)"],
+            ["Tax on Returns", "LTCG above Rs 1.25L taxed at 12.5%", "Interest taxed at slab rate"],
+            ["Lock-in", "None (except ELSS: 3 years)", "Flexible tenure (6 months to 10 years)"],
+            ["Inflation Protection", "Typically beats inflation over long term", "Often fails to beat inflation after tax"],
+            ["Flexibility", "Can pause, increase, or stop anytime", "Fixed amount, penalty for missing installments"],
+            ["Best For", "Long-term wealth creation (5+ years)", "Short-term savings with guaranteed returns"]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "For long-term goals like retirement, children's education, or wealth building, SIP in equity mutual funds is generally the better choice. For short-term goals (less than 3 years) where you need guaranteed returns, RD is the safer option."
+        },
+        {
+          "type": "h2",
+          "text": "How to Start a SIP — Step by Step"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Complete KYC (Know Your Customer) through your bank, AMC website, or platforms like MFCentral or CAMS.",
+            "Choose a mutual fund scheme based on your goals, risk tolerance, and investment horizon.",
+            "Select your SIP amount (starting from Rs 500/month) and debit date.",
+            "Set up auto-debit mandate through your bank (NACH/e-mandate).",
+            "Your SIP will run automatically every month until you choose to stop or modify it."
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "Is SIP safe for beginners?", "a": "SIP is considered one of the safest ways for beginners to enter the stock market because it eliminates the need to time the market. Through rupee cost averaging, you buy more units when prices are low and fewer when prices are high. However, SIP in equity funds still carries market risk — your returns are not guaranteed. For beginners, starting with large-cap or index fund SIPs is recommended." },
+        { "q": "Can I stop or pause my SIP anytime?", "a": "Yes, you can stop, pause, or modify your SIP at any time without any penalty (except for ELSS funds which have a 3-year lock-in per installment). Most AMCs allow you to pause your SIP for 1-3 months and resume later. You can also change the SIP amount, switch funds, or cancel the mandate entirely through your AMC app or website." },
+        { "q": "What is the minimum amount for SIP?", "a": "Most mutual funds allow SIP starting from Rs 500 per month. Some funds, particularly index funds from Kotak, Nippon, and UTI, allow SIP from as low as Rs 100 per month. There is no maximum limit — you can invest any amount above the minimum." },
+        { "q": "How is SIP different from lump sum investing?", "a": "In SIP, you invest a fixed amount every month over a period of time, benefiting from rupee cost averaging. In lump sum, you invest the entire amount at once. SIP reduces risk from market timing, while lump sum can deliver higher returns if invested at market lows. SIP is ideal for salaried investors; lump sum suits those with a large corpus." },
+        { "q": "Does SIP guarantee returns?", "a": "No, SIP does not guarantee returns. SIP is a method of investing, not a product. Your returns depend on the underlying mutual fund's performance, which is linked to the stock market. However, historically, equity SIPs held for 10+ years have delivered 12-15% CAGR. The longer you stay invested, the higher the probability of positive returns." }
+      ]
+    },
+    {
+      "slug": "step-up-sip-guide",
+      "title": "Step-Up SIP — Grow Wealth Faster by Increasing SIP Yearly (2026)",
+      "description": "Learn how Step-Up SIP works in 2026. See how increasing SIP by 10% yearly can double your corpus. Compare flat vs step-up SIP returns with examples.",
+      "keywords": "step up sip, top up sip, increase sip yearly, step up sip calculator, step up sip vs regular sip, sip annual increase, growing sip",
+      "heroTitle": "Step-Up SIP Guide",
+      "heroSub": "Discover how increasing your SIP amount annually can dramatically accelerate your wealth creation. Complete guide with examples and calculations.",
+      "contentType": "guide",
+      "ctaText": "Calculate Step-Up SIP",
+      "ctaLink": "/",
+      "guideContent": [
+        {
+          "type": "h2",
+          "text": "What is a Step-Up SIP?"
+        },
+        {
+          "type": "p",
+          "text": "A Step-Up SIP, also known as a Top-Up SIP, is a systematic investment plan where your monthly SIP amount automatically increases by a predetermined percentage or fixed amount at regular intervals — usually once a year. Unlike a regular SIP where you invest the same amount every month, a step-up SIP grows with your income."
+        },
+        {
+          "type": "p",
+          "text": "For example, if you start a step-up SIP of Rs 5,000 per month with a 10% annual increase, your SIP will be Rs 5,000/month in Year 1, Rs 5,500/month in Year 2, Rs 6,050/month in Year 3, and so on. The increase happens automatically based on the instruction you give when setting up the SIP."
+        },
+        {
+          "type": "h2",
+          "text": "Step-Up SIP vs Flat SIP — The Dramatic Difference"
+        },
+        {
+          "type": "p",
+          "text": "The difference between a flat SIP and a step-up SIP is staggering over long periods. Let us compare Rs 5,000/month flat SIP versus Rs 5,000/month with 10% annual step-up, both at 12% expected return."
+        },
+        {
+          "type": "table",
+          "headers": ["Duration", "Flat SIP Value", "Step-Up SIP Value", "Extra Wealth from Step-Up"],
+          "rows": [
+            ["5 Years", "Rs 4,12,432", "Rs 4,69,079", "+Rs 56,647 (14% more)"],
+            ["10 Years", "Rs 11,61,695", "Rs 15,68,545", "+Rs 4,06,850 (35% more)"],
+            ["15 Years", "Rs 25,22,879", "Rs 41,43,927", "+Rs 16,21,048 (64% more)"],
+            ["20 Years", "Rs 49,95,740", "Rs 1,06,30,614", "+Rs 56,34,874 (113% more)"]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "After 20 years, the step-up SIP creates Rs 1.06 crore compared to Rs 49.96 lakh from a flat SIP — that is more than double the wealth. The total investment in the step-up SIP is Rs 34.36 lakh compared to Rs 12 lakh in the flat SIP, but the returns are disproportionately higher because the larger amounts benefit from compounding for several years."
+        },
+        {
+          "type": "h2",
+          "text": "How Much More Do You Earn with Step-Up SIP?"
+        },
+        {
+          "type": "p",
+          "text": "The extra wealth from a step-up SIP comes from two sources. First, you invest more money overall because your contributions increase each year. Second, and more importantly, the increased contributions from earlier years get more time to compound."
+        },
+        {
+          "type": "p",
+          "text": "Consider the math: in Year 2, your step-up of Rs 500/month adds Rs 6,000 extra that year. But that Rs 6,000 then compounds at 12% for the remaining 18 years, growing to approximately Rs 46,000. Each additional rupee invested earlier multiplies significantly over time."
+        },
+        {
+          "type": "h3",
+          "text": "Impact of Different Step-Up Percentages"
+        },
+        {
+          "type": "p",
+          "text": "Here is how different annual step-up percentages affect your 20-year SIP corpus (starting SIP Rs 5,000/month at 12% return):"
+        },
+        {
+          "type": "table",
+          "headers": ["Annual Step-Up %", "Total Invested", "Corpus After 20 Years", "Wealth Gained"],
+          "rows": [
+            ["0% (Flat SIP)", "Rs 12,00,000", "Rs 49,95,740", "Rs 37,95,740"],
+            ["5%", "Rs 19,83,468", "Rs 72,56,835", "Rs 52,73,367"],
+            ["10%", "Rs 34,36,459", "Rs 1,06,30,614", "Rs 71,94,155"],
+            ["15%", "Rs 61,27,026", "Rs 1,55,53,282", "Rs 94,26,256"],
+            ["20%", "Rs 1,11,96,580", "Rs 2,26,15,387", "Rs 1,14,18,807"]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A 10% annual step-up is the sweet spot for most investors. It roughly matches average salary increments in India and leads to a corpus that is more than double the flat SIP amount."
+        },
+        {
+          "type": "h2",
+          "text": "Which AMCs Support Step-Up SIP?"
+        },
+        {
+          "type": "p",
+          "text": "Most major Asset Management Companies (AMCs) in India support step-up SIP through their online platforms and apps. Here are the key ones:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "SBI Mutual Fund — Supports step-up through the SBI MF app. Allows percentage-based or fixed amount increase annually.",
+            "HDFC AMC — Offers Top-Up SIP with annual increases through the HDFC MF Online portal and app.",
+            "Mirae Asset — Supports step-up SIP with flexible increase options through the Mirae Asset app.",
+            "ICICI Prudential — Allows Top-Up SIP with increments starting from Rs 500 or percentage-based increases.",
+            "Kotak Mutual Fund — Offers step-up facility through Kotak MF app with annual auto-increase.",
+            "Axis Mutual Fund — Supports SIP Top-Up with both percentage and fixed amount options."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "You can also set up step-up SIP through third-party platforms like Groww, Zerodha (Coin), Paytm Money, Kuvera, and ET Money. These platforms make it easy to manage step-ups across multiple fund houses from a single dashboard."
+        },
+        {
+          "type": "h2",
+          "text": "What is the Ideal Step-Up Percentage?"
+        },
+        {
+          "type": "p",
+          "text": "The ideal step-up percentage depends on your expected income growth and financial comfort. Here are general guidelines:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "5% Step-Up — Conservative choice for those with stable but slow-growing incomes. Still creates 45% more wealth than a flat SIP over 20 years.",
+            "10% Step-Up — The most recommended option. Matches average Indian salary growth and doubles your corpus compared to flat SIP over 20 years.",
+            "15% Step-Up — Aggressive choice for fast-growing careers (IT, consulting, startups). Creates approximately 3x the flat SIP corpus but requires significant income growth to sustain.",
+            "20%+ Step-Up — Only sustainable for very early career professionals or high-growth sectors. The SIP amount becomes very large in later years."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A good rule of thumb: set your step-up percentage at 2-3% lower than your expected annual salary increment. If you expect 12% annual raises, set a 10% step-up. This ensures the increasing SIP amount remains comfortable within your budget."
+        },
+        {
+          "type": "h2",
+          "text": "How to Set Up a Step-Up SIP"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Log in to your AMC website/app or investment platform (Groww, Zerodha, Kuvera, etc.).",
+            "Select the mutual fund scheme you want to invest in.",
+            "Choose the SIP option and enter your starting monthly amount.",
+            "Look for the 'Step-Up' or 'Top-Up' option — select it and enter the annual increase percentage or fixed amount.",
+            "Set your SIP start date and complete the e-mandate registration.",
+            "Your SIP will automatically increase on the anniversary of your SIP start date each year."
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "What is the difference between step-up SIP and regular SIP?", "a": "In a regular SIP, you invest the same fixed amount every month throughout the SIP tenure. In a step-up SIP, your monthly investment amount increases automatically at a set interval (usually yearly) by a fixed percentage or amount. For example, a regular SIP of Rs 5,000/month stays at Rs 5,000 forever, while a 10% step-up SIP becomes Rs 5,500 in Year 2, Rs 6,050 in Year 3, and so on." },
+        { "q": "Can I change the step-up percentage after starting?", "a": "Yes, most AMCs and platforms allow you to modify the step-up percentage or amount after setting it up. You can increase it, decrease it, or even remove the step-up instruction entirely. Some platforms require you to cancel the existing SIP and start a new one with the changed step-up instruction." },
+        { "q": "Is step-up SIP available for all mutual funds?", "a": "Step-up SIP is available for most equity, debt, and hybrid mutual fund schemes. However, the step-up facility depends on the AMC and the platform you use, not the specific scheme. All major AMCs like SBI MF, HDFC AMC, Mirae Asset, ICICI Prudential, and Axis support step-up SIPs across their fund range." },
+        { "q": "What happens if I cannot afford the increased SIP amount?", "a": "If your bank account does not have sufficient balance on the SIP debit date, the installment will bounce. After 3 consecutive failed attempts, most AMCs automatically cancel the SIP. To avoid this, you can reduce your step-up percentage or pause the step-up temporarily through your AMC portal or platform app." },
+        { "q": "How much difference does step-up SIP make over 10 years?", "a": "A Rs 5,000/month SIP with 10% annual step-up at 12% returns grows to approximately Rs 15.69 lakh in 10 years, compared to Rs 11.62 lakh from a flat SIP. That is 35% more wealth (Rs 4.07 lakh extra) with step-up. The difference becomes even more dramatic over 15-20 years." }
+      ]
     }
   ]
 }
