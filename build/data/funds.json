@@ -1,0 +1,273 @@
+[
+  {
+    "slug": "sbi-mutual-fund",
+    "name": "SBI MF",
+    "fullName": "SBI Mutual Fund",
+    "type": "amc",
+    "aum": "₹9.45 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.62 - 1.54%", "riskLevel": "High", "popular": "SBI Bluechip Fund, SBI Small Cap Fund, SBI Focused Equity Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8.5", "minSIP": 500, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.25 - 0.80%", "riskLevel": "Low to Moderate", "popular": "SBI Magnum Gilt Fund, SBI Short Term Debt Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.70 - 1.40%", "riskLevel": "Moderate", "popular": "SBI Equity Hybrid Fund, SBI Balanced Advantage Fund" },
+      "elss": { "returnRate": 15, "returnRange": "12 - 20", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.95 - 1.75%", "riskLevel": "High", "popular": "SBI Long Term Equity Fund" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "0.25% if redeemed within 15 days", "expenseRatio": "0.10 - 0.20%", "riskLevel": "High", "popular": "SBI Nifty Index Fund, SBI S&P BSE Sensex Index Fund" }
+    }
+  },
+  {
+    "slug": "hdfc-amc",
+    "name": "HDFC AMC",
+    "fullName": "HDFC Asset Management Company",
+    "type": "amc",
+    "aum": "₹7.52 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 15, "returnRange": "12 - 19", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.65 - 1.62%", "riskLevel": "High", "popular": "HDFC Flexi Cap Fund, HDFC Mid-Cap Opportunities Fund, HDFC Top 100 Fund" },
+      "debt": { "returnRate": 7.5, "returnRange": "6.5 - 9", "minSIP": 500, "exitLoad": "Nil to 0.50%", "expenseRatio": "0.20 - 0.75%", "riskLevel": "Low to Moderate", "popular": "HDFC Short Term Debt Fund, HDFC Corporate Bond Fund" },
+      "hybrid": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.80 - 1.50%", "riskLevel": "Moderate", "popular": "HDFC Balanced Advantage Fund, HDFC Hybrid Equity Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "1.05 - 1.80%", "riskLevel": "High", "popular": "HDFC ELSS Tax Saver Fund" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "0.25% if redeemed within 15 days", "expenseRatio": "0.10 - 0.20%", "riskLevel": "High", "popular": "HDFC Index Fund - Nifty 50 Plan, HDFC Index Fund - Sensex Plan" }
+    }
+  },
+  {
+    "slug": "icici-prudential",
+    "name": "ICICI Prudential",
+    "fullName": "ICICI Prudential Mutual Fund",
+    "type": "amc",
+    "aum": "₹7.10 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.60 - 1.58%", "riskLevel": "High", "popular": "ICICI Pru Bluechip Fund, ICICI Pru Value Discovery Fund" },
+      "debt": { "returnRate": 7.5, "returnRange": "6 - 9", "minSIP": 1000, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.22 - 0.72%", "riskLevel": "Low to Moderate", "popular": "ICICI Pru Short Term Fund, ICICI Pru All Seasons Bond Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.75 - 1.45%", "riskLevel": "Moderate", "popular": "ICICI Pru Balanced Advantage Fund, ICICI Pru Equity & Debt Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "1.00 - 1.70%", "riskLevel": "High", "popular": "ICICI Pru Long Term Equity Fund (Tax Saving)" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "0.25% if redeemed within 15 days", "expenseRatio": "0.10 - 0.18%", "riskLevel": "High", "popular": "ICICI Pru Nifty 50 Index Fund, ICICI Pru Nifty Next 50 Index Fund" }
+    }
+  },
+  {
+    "slug": "axis-mutual-fund",
+    "name": "Axis MF",
+    "fullName": "Axis Mutual Fund",
+    "type": "amc",
+    "aum": "₹2.68 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 13, "returnRange": "11 - 17", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.55 - 1.60%", "riskLevel": "High", "popular": "Axis Bluechip Fund, Axis Midcap Fund, Axis Small Cap Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8", "minSIP": 1000, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.20 - 0.68%", "riskLevel": "Low to Moderate", "popular": "Axis Short Term Fund, Axis Banking & PSU Debt Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.72 - 1.48%", "riskLevel": "Moderate", "popular": "Axis Balanced Advantage Fund, Axis Equity Hybrid Fund" },
+      "elss": { "returnRate": 13, "returnRange": "10 - 17", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.98 - 1.65%", "riskLevel": "High", "popular": "Axis Long Term Equity Fund" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "0.25% if redeemed within 15 days", "expenseRatio": "0.10 - 0.15%", "riskLevel": "High", "popular": "Axis Nifty 50 Index Fund" }
+    }
+  },
+  {
+    "slug": "kotak-mutual-fund",
+    "name": "Kotak MF",
+    "fullName": "Kotak Mutual Fund",
+    "type": "amc",
+    "aum": "₹4.22 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 15, "returnRange": "12 - 19", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.58 - 1.55%", "riskLevel": "High", "popular": "Kotak Flexicap Fund, Kotak Emerging Equity Fund, Kotak Small Cap Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8.5", "minSIP": 1000, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.22 - 0.70%", "riskLevel": "Low to Moderate", "popular": "Kotak Bond Short Term Fund, Kotak Corporate Bond Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.65 - 1.40%", "riskLevel": "Moderate", "popular": "Kotak Balanced Advantage Fund, Kotak Equity Hybrid Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.90 - 1.60%", "riskLevel": "High", "popular": "Kotak ELSS Tax Saver Fund" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 100, "exitLoad": "Nil", "expenseRatio": "0.07 - 0.15%", "riskLevel": "High", "popular": "Kotak Nifty 50 Index Fund, Kotak Nifty Next 50 Index Fund" }
+    }
+  },
+  {
+    "slug": "nippon-india",
+    "name": "Nippon India",
+    "fullName": "Nippon India Mutual Fund",
+    "type": "amc",
+    "aum": "₹4.85 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.60 - 1.60%", "riskLevel": "High", "popular": "Nippon India Growth Fund, Nippon India Small Cap Fund, Nippon India Large Cap Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8.5", "minSIP": 500, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.20 - 0.70%", "riskLevel": "Low to Moderate", "popular": "Nippon India Short Term Fund, Nippon India Dynamic Bond Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.72 - 1.42%", "riskLevel": "Moderate", "popular": "Nippon India Balanced Advantage Fund, Nippon India Equity Hybrid Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "1.00 - 1.65%", "riskLevel": "High", "popular": "Nippon India ELSS Tax Saver Fund" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "0.25% if redeemed within 15 days", "expenseRatio": "0.10 - 0.20%", "riskLevel": "High", "popular": "Nippon India Nifty 50 Index Fund, Nippon India Nifty BeES" }
+    }
+  },
+  {
+    "slug": "aditya-birla-sun-life",
+    "name": "ABSL MF",
+    "fullName": "Aditya Birla Sun Life Mutual Fund",
+    "type": "amc",
+    "aum": "₹3.42 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.58 - 1.55%", "riskLevel": "High", "popular": "ABSL Frontline Equity Fund, ABSL Flexi Cap Fund" },
+      "debt": { "returnRate": 7.5, "returnRange": "6.5 - 9", "minSIP": 1000, "exitLoad": "Nil to 0.50%", "expenseRatio": "0.25 - 0.78%", "riskLevel": "Low to Moderate", "popular": "ABSL Short Term Fund, ABSL Corporate Bond Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.75 - 1.48%", "riskLevel": "Moderate", "popular": "ABSL Balanced Advantage Fund, ABSL Equity Hybrid Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.95 - 1.70%", "riskLevel": "High", "popular": "ABSL ELSS Tax Relief 96 Fund" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "Nil", "expenseRatio": "0.10 - 0.18%", "riskLevel": "High", "popular": "ABSL Nifty 50 Index Fund" }
+    }
+  },
+  {
+    "slug": "uti-mutual-fund",
+    "name": "UTI MF",
+    "fullName": "UTI Mutual Fund",
+    "type": "amc",
+    "aum": "₹2.92 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.55 - 1.50%", "riskLevel": "High", "popular": "UTI Flexi Cap Fund, UTI Mastershare Unit Scheme" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8.5", "minSIP": 500, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.20 - 0.65%", "riskLevel": "Low to Moderate", "popular": "UTI Short Term Income Fund, UTI Bond Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.70 - 1.40%", "riskLevel": "Moderate", "popular": "UTI Balanced Advantage Fund, UTI Hybrid Equity Fund" },
+      "elss": { "returnRate": 13, "returnRange": "10 - 17", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.90 - 1.60%", "riskLevel": "High", "popular": "UTI Long Term Equity Fund (Tax Saving)" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "Nil", "expenseRatio": "0.10 - 0.18%", "riskLevel": "High", "popular": "UTI Nifty 50 Index Fund, UTI Nifty Next 50 Index Fund" }
+    }
+  },
+  {
+    "slug": "dsp-mutual-fund",
+    "name": "DSP MF",
+    "fullName": "DSP Mutual Fund",
+    "type": "amc",
+    "aum": "₹1.48 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.55 - 1.52%", "riskLevel": "High", "popular": "DSP Flexi Cap Fund, DSP Midcap Fund, DSP Small Cap Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8.5", "minSIP": 500, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.22 - 0.68%", "riskLevel": "Low to Moderate", "popular": "DSP Short Term Fund, DSP Bond Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.68 - 1.42%", "riskLevel": "Moderate", "popular": "DSP Equity & Bond Fund, DSP Dynamic Asset Allocation Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.92 - 1.65%", "riskLevel": "High", "popular": "DSP ELSS Tax Saver Fund" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "0.25% if redeemed within 15 days", "expenseRatio": "0.10 - 0.20%", "riskLevel": "High", "popular": "DSP Nifty 50 Index Fund, DSP Nifty Next 50 Index Fund" }
+    }
+  },
+  {
+    "slug": "mirae-asset",
+    "name": "Mirae Asset",
+    "fullName": "Mirae Asset Mutual Fund",
+    "type": "amc",
+    "aum": "₹1.82 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 15, "returnRange": "13 - 19", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.50 - 1.45%", "riskLevel": "High", "popular": "Mirae Asset Large Cap Fund, Mirae Asset Emerging Bluechip Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8", "minSIP": 1000, "exitLoad": "Nil", "expenseRatio": "0.18 - 0.60%", "riskLevel": "Low to Moderate", "popular": "Mirae Asset Short Term Fund, Mirae Asset Dynamic Bond Fund" },
+      "hybrid": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.65 - 1.35%", "riskLevel": "Moderate", "popular": "Mirae Asset Hybrid Equity Fund, Mirae Asset Balanced Advantage Fund" },
+      "elss": { "returnRate": 15, "returnRange": "12 - 20", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.85 - 1.55%", "riskLevel": "High", "popular": "Mirae Asset ELSS Tax Saver Fund" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "0.25% if redeemed within 15 days", "expenseRatio": "0.07 - 0.15%", "riskLevel": "High", "popular": "Mirae Asset Nifty 50 ETF" }
+    }
+  },
+  {
+    "slug": "tata-mutual-fund",
+    "name": "Tata MF",
+    "fullName": "Tata Mutual Fund",
+    "type": "amc",
+    "aum": "₹1.25 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.55 - 1.55%", "riskLevel": "High", "popular": "Tata Large Cap Fund, Tata Midcap Growth Fund, Tata Small Cap Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8.5", "minSIP": 500, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.22 - 0.70%", "riskLevel": "Low to Moderate", "popular": "Tata Short Term Bond Fund, Tata Money Market Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.70 - 1.42%", "riskLevel": "Moderate", "popular": "Tata Balanced Advantage Fund, Tata Hybrid Equity Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.95 - 1.65%", "riskLevel": "High", "popular": "Tata India Tax Savings Fund" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "Nil", "expenseRatio": "0.10 - 0.18%", "riskLevel": "High", "popular": "Tata Nifty 50 Index Fund" }
+    }
+  },
+  {
+    "slug": "canara-robeco",
+    "name": "Canara Robeco",
+    "fullName": "Canara Robeco Mutual Fund",
+    "type": "amc",
+    "aum": "₹0.95 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.50 - 1.45%", "riskLevel": "High", "popular": "Canara Robeco Flexicap Fund, Canara Robeco Bluechip Equity Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8", "minSIP": 1000, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.20 - 0.65%", "riskLevel": "Low to Moderate", "popular": "Canara Robeco Short Duration Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.65 - 1.38%", "riskLevel": "Moderate", "popular": "Canara Robeco Equity Hybrid Fund" },
+      "elss": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.88 - 1.55%", "riskLevel": "High", "popular": "Canara Robeco ELSS Tax Saver Fund" },
+      "index": { "returnRate": 12, "returnRange": "10 - 15", "minSIP": 500, "exitLoad": "Nil", "expenseRatio": "0.10 - 0.20%", "riskLevel": "High", "popular": "Canara Robeco Nifty 50 Index Fund" }
+    }
+  },
+  {
+    "slug": "ppfas-mutual-fund",
+    "name": "PPFAS MF",
+    "fullName": "PPFAS Mutual Fund",
+    "type": "amc",
+    "aum": "₹0.78 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 16, "returnRange": "14 - 22", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.55 - 1.30%", "riskLevel": "High", "popular": "Parag Parikh Flexi Cap Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.60 - 1.25%", "riskLevel": "Moderate", "popular": "Parag Parikh Conservative Hybrid Fund" },
+      "elss": { "returnRate": 15, "returnRange": "12 - 20", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.65 - 1.35%", "riskLevel": "High", "popular": "Parag Parikh ELSS Tax Saver Fund" }
+    }
+  },
+  {
+    "slug": "motilal-oswal",
+    "name": "Motilal Oswal",
+    "fullName": "Motilal Oswal Mutual Fund",
+    "type": "amc",
+    "aum": "₹0.95 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 15, "returnRange": "13 - 20", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.55 - 1.52%", "riskLevel": "High", "popular": "Motilal Oswal Flexi Cap Fund, Motilal Oswal Midcap Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.70 - 1.40%", "riskLevel": "Moderate", "popular": "Motilal Oswal Balanced Advantage Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.88 - 1.55%", "riskLevel": "High", "popular": "Motilal Oswal ELSS Tax Saver Fund" },
+      "index": { "returnRate": 13, "returnRange": "10 - 16", "minSIP": 500, "exitLoad": "Nil", "expenseRatio": "0.05 - 0.15%", "riskLevel": "High", "popular": "Motilal Oswal Nifty 50 Index Fund, Motilal Oswal S&P 500 Index Fund" }
+    }
+  },
+  {
+    "slug": "edelweiss-mutual-fund",
+    "name": "Edelweiss MF",
+    "fullName": "Edelweiss Mutual Fund",
+    "type": "amc",
+    "aum": "₹0.72 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.55 - 1.50%", "riskLevel": "High", "popular": "Edelweiss Large Cap Fund, Edelweiss Flexi Cap Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8.5", "minSIP": 500, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.22 - 0.68%", "riskLevel": "Low to Moderate", "popular": "Edelweiss Banking & PSU Debt Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.70 - 1.42%", "riskLevel": "Moderate", "popular": "Edelweiss Balanced Advantage Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.90 - 1.60%", "riskLevel": "High", "popular": "Edelweiss ELSS Tax Saver Fund" }
+    }
+  },
+  {
+    "slug": "bandhan-mutual-fund",
+    "name": "Bandhan MF",
+    "fullName": "Bandhan Mutual Fund",
+    "type": "amc",
+    "aum": "₹0.85 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.55 - 1.52%", "riskLevel": "High", "popular": "Bandhan Flexi Cap Fund, Bandhan Core Equity Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8.5", "minSIP": 1000, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.20 - 0.65%", "riskLevel": "Low to Moderate", "popular": "Bandhan Short Term Fund, Bandhan Bond Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.70 - 1.40%", "riskLevel": "Moderate", "popular": "Bandhan Balanced Advantage Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.92 - 1.62%", "riskLevel": "High", "popular": "Bandhan ELSS Tax Saver Fund" }
+    }
+  },
+  {
+    "slug": "sundaram-mutual-fund",
+    "name": "Sundaram MF",
+    "fullName": "Sundaram Mutual Fund",
+    "type": "amc",
+    "aum": "₹0.62 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.60 - 1.58%", "riskLevel": "High", "popular": "Sundaram Large Cap Fund, Sundaram Mid Cap Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8", "minSIP": 1000, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.22 - 0.68%", "riskLevel": "Low to Moderate", "popular": "Sundaram Short Duration Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.68 - 1.40%", "riskLevel": "Moderate", "popular": "Sundaram Balanced Advantage Fund, Sundaram Equity Hybrid Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.95 - 1.65%", "riskLevel": "High", "popular": "Sundaram ELSS Tax Saver Fund" }
+    }
+  },
+  {
+    "slug": "hsbc-mutual-fund",
+    "name": "HSBC MF",
+    "fullName": "HSBC Mutual Fund",
+    "type": "amc",
+    "aum": "₹0.72 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.58 - 1.55%", "riskLevel": "High", "popular": "HSBC Large Cap Fund, HSBC Flexi Cap Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8.5", "minSIP": 1000, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.20 - 0.65%", "riskLevel": "Low to Moderate", "popular": "HSBC Short Duration Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.70 - 1.42%", "riskLevel": "Moderate", "popular": "HSBC Balanced Advantage Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.90 - 1.60%", "riskLevel": "High", "popular": "HSBC ELSS Tax Saver Fund" }
+    }
+  },
+  {
+    "slug": "franklin-templeton",
+    "name": "Franklin Templeton",
+    "fullName": "Franklin Templeton Mutual Fund",
+    "type": "amc",
+    "aum": "₹0.58 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.55 - 1.52%", "riskLevel": "High", "popular": "Franklin India Flexi Cap Fund, Franklin India Bluechip Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8.5", "minSIP": 500, "exitLoad": "Nil to 0.50%", "expenseRatio": "0.22 - 0.72%", "riskLevel": "Low to Moderate", "popular": "Franklin India Short Term Income Plan" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.70 - 1.45%", "riskLevel": "Moderate", "popular": "Franklin India Balanced Advantage Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.95 - 1.68%", "riskLevel": "High", "popular": "Franklin India ELSS Tax Saver Fund" }
+    }
+  },
+  {
+    "slug": "invesco-mutual-fund",
+    "name": "Invesco MF",
+    "fullName": "Invesco Mutual Fund",
+    "type": "amc",
+    "aum": "₹0.52 Lakh Crore",
+    "categories": {
+      "equity": { "returnRate": 14, "returnRange": "12 - 18", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.55 - 1.50%", "riskLevel": "High", "popular": "Invesco India Flexi Cap Fund, Invesco India Contra Fund" },
+      "debt": { "returnRate": 7, "returnRange": "6 - 8", "minSIP": 1000, "exitLoad": "Nil to 0.25%", "expenseRatio": "0.20 - 0.65%", "riskLevel": "Low to Moderate", "popular": "Invesco India Short Term Fund" },
+      "hybrid": { "returnRate": 11, "returnRange": "9 - 14", "minSIP": 500, "exitLoad": "1% if redeemed within 1 year", "expenseRatio": "0.68 - 1.40%", "riskLevel": "Moderate", "popular": "Invesco India Balanced Advantage Fund" },
+      "elss": { "returnRate": 14, "returnRange": "11 - 18", "minSIP": 500, "exitLoad": "Nil (3-year lock-in)", "expenseRatio": "0.90 - 1.60%", "riskLevel": "High", "popular": "Invesco India ELSS Tax Saver Fund" }
+    }
+  }
+]
