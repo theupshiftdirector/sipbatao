@@ -1,0 +1,114 @@
+{
+  "pages": [
+    {
+      "slug": "best-sip-plans",
+      "title": "Best SIP Plans in India 2026 — Compare & Start Investing",
+      "description": "Compare the best SIP plans in India 2026. See returns from top AMCs like Mirae Asset, SBI MF, HDFC AMC, ICICI Prudential & more. Start SIP from Rs 500/month.",
+      "keywords": "best sip plans 2026, best mutual fund for sip, top sip plans india, best sip to invest, sip comparison india",
+      "heroTitle": "Best SIP Plans",
+      "heroSub": "Compare returns, expense ratios, and features from India's top fund houses. Updated for 2026.",
+      "category": "equity",
+      "pageType": "fund-comparison",
+      "topPicks": ["mirae-asset", "sbi-mutual-fund", "hdfc-amc"],
+      "editorNotes": {
+        "mirae-asset": "Consistently among the top performers in equity returns. Mirae Asset Large Cap and Emerging Bluechip are standout SIP choices with low expense ratios.",
+        "sbi-mutual-fund": "India's largest AMC by AUM. SBI Bluechip and Small Cap funds have a strong long-term track record. Trusted by millions of SIP investors.",
+        "hdfc-amc": "Excellent large-cap and flexi-cap options. HDFC Flexi Cap Fund and Mid-Cap Opportunities are among India's most popular SIP schemes."
+      },
+      "badges": {
+        "mirae-asset": "Best Returns",
+        "sbi-mutual-fund": "Most Trusted",
+        "hdfc-amc": "Best Large Cap"
+      },
+      "ctaText": "Calculate SIP Returns",
+      "faqs": [
+        { "q": "Which is the best SIP plan to invest in 2026?", "a": "The best SIP plan depends on your goals and risk appetite. For high growth, Mirae Asset and PPFAS Flexi Cap funds lead in equity returns (13-19% p.a.). For stability, SBI and HDFC large-cap funds are trusted choices. Use the comparison table above to find the best fit." },
+        { "q": "How much should I invest in SIP per month?", "a": "Start with an amount you can commit to consistently. Even Rs 500/month can grow significantly over 10-15 years. Ideally, invest 20-30% of your monthly income. Use our SIP calculator to see how different amounts grow over time." },
+        { "q": "Is SIP better than Fixed Deposit?", "a": "SIP in equity mutual funds has historically delivered 12-15% annual returns over 10+ years, compared to 6-7% from FDs. SIPs also benefit from rupee cost averaging and compounding. However, equity SIPs carry market risk, while FDs offer guaranteed returns." },
+        { "q": "What is the minimum amount to start SIP?", "a": "Most mutual funds allow SIP starting from Rs 500 per month. Some index funds like Kotak Nifty 50 Index allow SIP from as low as Rs 100. You can start small and increase your SIP amount over time with step-up SIP." },
+        { "q": "How to choose the best SIP plan?", "a": "Consider these factors: (1) Your investment horizon — equity for 7+ years, debt for 1-3 years, (2) Risk tolerance — large-cap for low risk, mid/small-cap for high growth, (3) Fund house track record and AUM, (4) Expense ratio — lower is better, (5) Consistency of returns over 3, 5, and 10 years." }
+      ]
+    },
+    {
+      "slug": "best-elss-funds",
+      "title": "Best ELSS Tax Saving Funds 2026 — Save Tax Under Section 80C",
+      "description": "Compare the best ELSS tax saving mutual funds in 2026. Save up to Rs 46,800 in taxes under Section 80C. Compare 5-year returns, expense ratios & start SIP.",
+      "keywords": "best elss funds 2026, elss tax saving mutual fund, best tax saving sip, section 80c mutual fund, elss fund comparison",
+      "heroTitle": "Best ELSS Tax Saving Funds",
+      "heroSub": "Save taxes under Section 80C while growing your wealth. Compare ELSS funds with 3-year lock-in from top AMCs.",
+      "category": "elss",
+      "pageType": "fund-comparison",
+      "topPicks": ["mirae-asset", "ppfas-mutual-fund", "sbi-mutual-fund"],
+      "editorNotes": {
+        "mirae-asset": "Top ELSS performer with 12-20% return range. Mirae Asset ELSS Tax Saver Fund combines tax savings with aggressive equity growth. Low expense ratio of 0.85-1.55%.",
+        "ppfas-mutual-fund": "Parag Parikh ELSS Tax Saver is unique with international equity diversification. Consistently delivers 12-20% returns with one of the lowest expense ratios in the ELSS category.",
+        "sbi-mutual-fund": "SBI Long Term Equity Fund is one of India's oldest and most trusted ELSS funds. Backed by India's largest AMC with Rs 9.45 Lakh Crore AUM."
+      },
+      "badges": {
+        "mirae-asset": "Top Returns",
+        "ppfas-mutual-fund": "Best Diversified",
+        "sbi-mutual-fund": "Most Trusted"
+      },
+      "ctaText": "Calculate Tax Savings",
+      "faqs": [
+        { "q": "What is ELSS and how does it save tax?", "a": "ELSS (Equity Linked Savings Scheme) is a type of mutual fund that qualifies for tax deduction under Section 80C of the Income Tax Act. You can claim deduction up to Rs 1.5 Lakh per year, saving up to Rs 46,800 in taxes (at 30% slab + cess). ELSS has the shortest lock-in of 3 years among 80C investments." },
+        { "q": "Which ELSS fund has given the best returns in 2026?", "a": "Mirae Asset ELSS Tax Saver and PPFAS ELSS Tax Saver have been among the top performers with 5-year returns in the range of 15-20% CAGR. However, past returns don't guarantee future performance. Compare multiple funds using the table above." },
+        { "q": "Is ELSS better than PPF for tax saving?", "a": "ELSS offers higher return potential (12-20% p.a.) compared to PPF (7.1% p.a.) and has a shorter lock-in (3 years vs 15 years). However, ELSS carries market risk while PPF offers guaranteed returns. A mix of both can balance your portfolio." },
+        { "q": "What is the lock-in period for ELSS funds?", "a": "ELSS funds have a mandatory 3-year lock-in period from the date of each investment. For SIP investors, each monthly installment has its own 3-year lock-in. After the lock-in, you can choose to remain invested or redeem. There is no exit load after the lock-in period." },
+        { "q": "How much tax can I save with ELSS SIP?", "a": "By investing Rs 12,500/month (Rs 1.5 Lakh/year) in ELSS via SIP, you can save up to Rs 46,800 in taxes annually (at 30% tax slab + 4% cess). Over 10 years, that's Rs 4.68 Lakh in tax savings alone, plus your investment grows at 12-15% CAGR." }
+      ]
+    },
+    {
+      "slug": "sip-vs-lumpsum",
+      "title": "SIP vs Lump Sum Investment 2026 — Which is Better?",
+      "description": "SIP vs Lump Sum: which investment strategy is better in 2026? Compare risk, returns, and suitability. Learn when to choose SIP and when lump sum works better.",
+      "keywords": "sip vs lumpsum, sip vs lump sum investment, which is better sip or lumpsum, sip vs one time investment, systematic investment plan vs lump sum",
+      "heroTitle": "SIP vs Lump Sum Investment",
+      "heroSub": "Find out which investment strategy suits your goals. Data-driven comparison with real return scenarios.",
+      "category": "equity",
+      "pageType": "content-comparison",
+      "comparisonTable": [
+        { "factor": "Investment Style", "sip": "Fixed amount invested monthly (e.g., Rs 10,000/month)", "lumpsum": "Entire amount invested at once (e.g., Rs 5 Lakh)" },
+        { "factor": "Risk Level", "sip": "Lower risk due to rupee cost averaging", "lumpsum": "Higher risk as entire capital exposed to market timing" },
+        { "factor": "Best For", "sip": "Salaried investors with regular income", "lumpsum": "Investors with a large corpus (bonus, inheritance, etc.)" },
+        { "factor": "Market Timing", "sip": "No need to time the market — automatic averaging", "lumpsum": "Timing matters — investing at market highs reduces returns" },
+        { "factor": "Ideal Market Condition", "sip": "Volatile or declining markets (buy more units at lower prices)", "lumpsum": "Bull markets or market corrections (low valuations)" },
+        { "factor": "Discipline", "sip": "Enforces investing discipline with auto-debit", "lumpsum": "Requires conviction to stay invested during volatility" },
+        { "factor": "Returns (Equity)", "sip": "12-15% CAGR over 10+ years (smoothed returns)", "lumpsum": "Potentially higher if timed well, but variable" },
+        { "factor": "Returns (Debt/Index)", "sip": "7-12% — less volatile, SIP and lumpsum perform similarly", "lumpsum": "7-12% — for stable returns, lumpsum in debt is fine" },
+        { "factor": "Flexibility", "sip": "Can start, stop, increase, or decrease anytime", "lumpsum": "One-time decision; can redeem partially later" },
+        { "factor": "Tax Saving (ELSS)", "sip": "Each installment has separate 3-year lock-in", "lumpsum": "Single 3-year lock-in from date of investment" }
+      ],
+      "sipRecommendedAMCs": ["mirae-asset", "sbi-mutual-fund", "hdfc-amc"],
+      "lumpsumRecommendedAMCs": ["kotak-mutual-fund", "icici-prudential", "hdfc-amc"],
+      "sipRecommendedNotes": {
+        "mirae-asset": "Best for equity SIP with consistent top-quartile returns. Mirae Asset Large Cap and Emerging Bluechip excel in volatile markets.",
+        "sbi-mutual-fund": "Most trusted for long-term SIP. SBI Bluechip and Focused Equity funds are ideal for disciplined monthly investing.",
+        "hdfc-amc": "Strong equity SIP options. HDFC Flexi Cap Fund is one of India's most popular SIP choices with excellent 10-year track record."
+      },
+      "lumpsumRecommendedNotes": {
+        "kotak-mutual-fund": "Excellent debt and index fund options for lump sum. Kotak Nifty 50 Index Fund has one of the lowest expense ratios (0.07%) in India.",
+        "icici-prudential": "ICICI Pru Balanced Advantage Fund is ideal for lump sum — it dynamically adjusts equity/debt allocation based on market valuations.",
+        "hdfc-amc": "HDFC Balanced Advantage Fund is a top lump sum choice. It automatically shifts between equity and debt to manage risk."
+      },
+      "sipBadges": {
+        "mirae-asset": "Best for Equity SIP",
+        "sbi-mutual-fund": "Most Trusted",
+        "hdfc-amc": "Most Popular"
+      },
+      "lumpsumBadges": {
+        "kotak-mutual-fund": "Lowest Cost Index",
+        "icici-prudential": "Best Dynamic Allocation",
+        "hdfc-amc": "Best Balanced Fund"
+      },
+      "ctaText": "Calculate Returns",
+      "faqs": [
+        { "q": "Is SIP better than lump sum investment?", "a": "SIP is better for most retail investors because it removes the need to time the market, averages out purchase costs, and enforces investing discipline. However, if you have a large sum and the market is at a correction, lump sum can deliver higher returns." },
+        { "q": "Can I do both SIP and lump sum in the same fund?", "a": "Yes, most mutual funds allow both SIP and lump sum investments in the same scheme. A common strategy is to run a regular SIP and add lump sum amounts during market corrections or when you receive bonuses." },
+        { "q": "Which gives higher returns — SIP or lump sum?", "a": "Over long periods (10+ years), both tend to deliver similar returns. Lump sum can outperform in a sustained bull market, while SIP outperforms in volatile or declining markets due to rupee cost averaging. SIP is generally recommended for equity; lump sum works well for debt funds." },
+        { "q": "How much should I invest in SIP vs lump sum?", "a": "Use SIP for your regular monthly savings (e.g., 20-30% of income). Use lump sum for windfall amounts like bonuses, maturity proceeds, or inheritance. For lump sum over Rs 5 Lakh, consider Systematic Transfer Plan (STP) to gradually move from debt to equity." },
+        { "q": "What is Systematic Transfer Plan (STP)?", "a": "STP is a strategy where you invest a lump sum in a debt fund and systematically transfer a fixed amount to an equity fund monthly. It combines the benefits of lump sum (immediate deployment) with SIP (rupee cost averaging). STP is ideal for large lump sum amounts in volatile markets." }
+      ]
+    }
+  ]
+}

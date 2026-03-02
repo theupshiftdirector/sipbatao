@@ -68,6 +68,8 @@ function ensureDir(dir) {
 // ─── Load data ───────────────────────────────────────────────────────────────
 const amcs = JSON.parse(fs.readFileSync(path.join(DATA, 'funds.json'), 'utf8'));
 const layoutTemplate = fs.readFileSync(path.join(TEMPLATES, 'layout.html'), 'utf8');
+const affiliateData = JSON.parse(fs.readFileSync(path.join(DATA, 'affiliates.json'), 'utf8'));
+const affiliateTemplate = fs.readFileSync(path.join(TEMPLATES, 'affiliate.html'), 'utf8');
 
 // ─── Calculator JS (shared across all SEO pages) ────────────────────────────
 const CALCULATOR_JS = `
@@ -1056,6 +1058,328 @@ ${calculatorHTML()}
   allPages.push(slug);
 }
 
+// ─── Affiliate page generator ────────────────────────────────────────────────
+
+function buildAffiliatePage(opts) {
+  const { title, description, keywords, canonicalPath, breadcrumb, breadcrumbItems, content, faqSection, linksSection, disclaimer, jsonLd } = opts;
+
+  let allJsonLd = '';
+  if (jsonLd) allJsonLd += `<script type="application/ld+json">\n${jsonLd}\n</script>\n`;
+  if (breadcrumbItems) allJsonLd += `    <script type="application/ld+json">\n${breadcrumbSchemaJSON(breadcrumbItems)}\n</script>`;
+
+  const verificationTag = GOOGLE_VERIFICATION ? `<meta name="google-site-verification" content="${GOOGLE_VERIFICATION}">` : '';
+
+  let html = affiliateTemplate
+    .replace(/{{PAGE_TITLE}}/g, title)
+    .replace(/{{META_DESCRIPTION}}/g, description)
+    .replace(/{{META_KEYWORDS}}/g, keywords || '')
+    .replace(/{{CANONICAL_PATH}}/g, canonicalPath)
+    .replace('{{JSON_LD}}', allJsonLd)
+    .replace('{{GOOGLE_VERIFICATION}}', verificationTag)
+    .replace('{{BREADCRUMB}}', breadcrumb || '')
+    .replace('{{CONTENT}}', content)
+    .replace('{{FAQ_SECTION}}', faqSection || '')
+    .replace('{{LINKS_SECTION}}', linksSection || '')
+    .replace('{{DISCLAIMER}}', disclaimer || '');
+
+  return html;
+}
+
+function generateAffiliatePage(pageData) {
+  const { slug, title, description, keywords, heroTitle, heroSub, category, pageType, faqs } = pageData;
+  const cat = CATEGORIES[category];
+
+  let content = '';
+
+  if (pageType === 'fund-comparison') {
+    // --- Top 3 Picks ---
+    const topAMCs = pageData.topPicks
+      .map(s => amcs.find(a => a.slug === s))
+      .filter(a => a && a.categories[category]);
+
+    const picksHTML = topAMCs.map((amc, i) => {
+      const fund = amc.categories[category];
+      const badgeText = pageData.badges[amc.slug] || '';
+      const note = pageData.editorNotes[amc.slug] || '';
+      const defaultAmt = SIP_AMOUNTS[Math.floor(SIP_AMOUNTS.length / 2)];
+      const months = cat.defaultYears * 12;
+      const fv = calculateSIPFV(defaultAmt, fund.returnRate, months);
+
+      return `
+    <div class="pick-card${i === 0 ? ' featured' : ''}">
+        ${badgeText ? `<div class="pick-badge">${badgeText}</div>` : ''}
+        <div class="pick-rank">#${i + 1} Pick</div>
+        <div class="pick-name">${amc.fullName}</div>
+        <div class="pick-rate">${fund.returnRange}% <small>p.a.</small></div>
+        <p class="pick-note">${note}</p>
+        <ul class="pick-features">
+            <li>Min SIP: \u20B9${formatINR(fund.minSIP)}/month</li>
+            <li>Expense Ratio: ${fund.expenseRatio}</li>
+            <li>Exit Load: ${fund.exitLoad}</li>
+            <li>SIP of \u20B9${formatINR(defaultAmt)}/mo for ${cat.defaultYears}yr = \u20B9${formatINR(fv)}</li>
+        </ul>
+        <a href="/${amc.slug}-${category}-sip-calculator" class="pick-cta">${pageData.ctaText} \u2192</a>
+    </div>`;
+    }).join('');
+
+    // --- Full Comparison Table ---
+    const amcsWithCat = amcs
+      .filter(a => a.categories[category])
+      .sort((a, b) => b.categories[category].returnRate - a.categories[category].returnRate);
+
+    const defaultAmt = SIP_AMOUNTS[Math.floor(SIP_AMOUNTS.length / 2)];
+    const months = cat.defaultYears * 12;
+
+    const tableRows = amcsWithCat.map(amc => {
+      const fund = amc.categories[category];
+      const fv = calculateSIPFV(defaultAmt, fund.returnRate, months);
+      return `<tr>
+        <td class="bank-name">${amc.name}</td>
+        <td class="rate-col">${fund.returnRange}%</td>
+        <td>\u20B9${formatINR(fund.minSIP)}</td>
+        <td>${fund.expenseRatio}</td>
+        <td>${fund.popular.split(',')[0]}</td>
+        <td class="cta-col"><a href="/${amc.slug}-${category}-sip-calculator" class="table-cta">${pageData.ctaText} \u2192</a></td>
+    </tr>`;
+    }).join('');
+
+    content = `
+<section class="page-hero">
+    <h1><span class="hl">${heroTitle}</span> in India ${YEAR}</h1>
+    <p>${heroSub}</p>
+    <div class="updated">Updated: ${new Date().toLocaleString('en-IN', { month: 'long', year: 'numeric' })}</div>
+</section>
+
+<!-- Ad: Below Hero -->
+<div style="max-width:1200px;margin:0 auto 24px;padding:0 24px;text-align:center;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8235932614579966" data-ad-slot="auto" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<section class="top-picks">
+    <h2 class="top-picks-title">Our Top Picks</h2>
+    <div class="picks-grid">
+        ${picksHTML}
+    </div>
+</section>
+
+<section class="comparison-section">
+    <h2>All ${cat.label} Fund Houses \u2014 Full Comparison</h2>
+    <p style="color:var(--text-muted);font-size:14px;margin-bottom:16px;">Returns for \u20B9${formatINR(defaultAmt)}/month SIP over ${cat.defaultYears} years. Sorted by expected returns (highest first).</p>
+    <div class="table-container">
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Fund House</th>
+                    <th>Expected Return</th>
+                    <th>Min SIP</th>
+                    <th>Expense Ratio</th>
+                    <th>Popular Scheme</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                ${tableRows}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="calc-cta">
+    <div class="calc-cta-box">
+        <h3>Calculate Your SIP Returns</h3>
+        <p>Know your exact future value, total investment, and wealth gained with our free SIP calculator.</p>
+        <a href="/${category}-sip-calculator" class="calc-cta-btn">Open SIP Calculator \u2192</a>
+    </div>
+</section>`;
+
+  } else if (pageType === 'content-comparison') {
+    // --- SIP vs Lumpsum style content comparison ---
+    const comparisonRows = pageData.comparisonTable.map(row => {
+      return `<tr>
+        <td>${row.factor}</td>
+        <td>${row.sip}</td>
+        <td>${row.lumpsum}</td>
+    </tr>`;
+    }).join('');
+
+    // --- SIP Recommended AMCs ---
+    const sipAMCs = pageData.sipRecommendedAMCs
+      .map(s => amcs.find(a => a.slug === s))
+      .filter(a => a && a.categories[category]);
+
+    const sipPicksHTML = sipAMCs.map((amc, i) => {
+      const fund = amc.categories[category];
+      const badgeText = pageData.sipBadges[amc.slug] || '';
+      const note = pageData.sipRecommendedNotes[amc.slug] || '';
+      const defaultAmt = SIP_AMOUNTS[Math.floor(SIP_AMOUNTS.length / 2)];
+      const months = cat.defaultYears * 12;
+      const fv = calculateSIPFV(defaultAmt, fund.returnRate, months);
+
+      return `
+    <div class="pick-card${i === 0 ? ' featured' : ''}">
+        ${badgeText ? `<div class="pick-badge">${badgeText}</div>` : ''}
+        <div class="pick-rank">#${i + 1} for SIP</div>
+        <div class="pick-name">${amc.fullName}</div>
+        <div class="pick-rate">${fund.returnRange}% <small>p.a.</small></div>
+        <p class="pick-note">${note}</p>
+        <ul class="pick-features">
+            <li>Min SIP: \u20B9${formatINR(fund.minSIP)}/month</li>
+            <li>Expense Ratio: ${fund.expenseRatio}</li>
+            <li>SIP of \u20B9${formatINR(defaultAmt)}/mo for ${cat.defaultYears}yr = \u20B9${formatINR(fv)}</li>
+        </ul>
+        <a href="/${amc.slug}-${category}-sip-calculator" class="pick-cta">Calculate SIP Returns \u2192</a>
+    </div>`;
+    }).join('');
+
+    // --- Lumpsum Recommended AMCs ---
+    const lumpAMCs = pageData.lumpsumRecommendedAMCs
+      .map(s => amcs.find(a => a.slug === s))
+      .filter(a => a);
+
+    const lumpPicksHTML = lumpAMCs.map((amc, i) => {
+      const fund = amc.categories['hybrid'] || amc.categories['index'] || amc.categories[category];
+      if (!fund) return '';
+      const badgeText = pageData.lumpsumBadges[amc.slug] || '';
+      const note = pageData.lumpsumRecommendedNotes[amc.slug] || '';
+      const fundCat = amc.categories['hybrid'] ? 'hybrid' : amc.categories['index'] ? 'index' : category;
+
+      return `
+    <div class="pick-card${i === 0 ? ' featured' : ''}">
+        ${badgeText ? `<div class="pick-badge">${badgeText}</div>` : ''}
+        <div class="pick-rank">#${i + 1} for Lump Sum</div>
+        <div class="pick-name">${amc.fullName}</div>
+        <div class="pick-rate">${fund.returnRange}% <small>p.a.</small></div>
+        <p class="pick-note">${note}</p>
+        <ul class="pick-features">
+            <li>Min SIP: \u20B9${formatINR(fund.minSIP)}/month</li>
+            <li>Expense Ratio: ${fund.expenseRatio}</li>
+            <li>Risk Level: ${fund.riskLevel}</li>
+        </ul>
+        <a href="/${amc.slug}-${fundCat}-sip-calculator" class="pick-cta">Calculate Returns \u2192</a>
+    </div>`;
+    }).join('');
+
+    content = `
+<section class="page-hero">
+    <h1><span class="hl">${heroTitle}</span> ${YEAR}</h1>
+    <p>${heroSub}</p>
+    <div class="updated">Updated: ${new Date().toLocaleString('en-IN', { month: 'long', year: 'numeric' })}</div>
+</section>
+
+<!-- Ad: Below Hero -->
+<div style="max-width:1200px;margin:0 auto 24px;padding:0 24px;text-align:center;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8235932614579966" data-ad-slot="auto" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<section class="content-comparison">
+    <h2>SIP vs Lump Sum \u2014 Head-to-Head Comparison</h2>
+    <div class="table-container">
+        <table class="vs-table">
+            <thead>
+                <tr>
+                    <th>Factor</th>
+                    <th class="sip-col">SIP Advantage</th>
+                    <th class="lump-col">Lump Sum Advantage</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${comparisonRows}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="top-picks">
+    <h2 class="top-picks-title">Best AMCs for SIP (Equity)</h2>
+    <div class="picks-grid">
+        ${sipPicksHTML}
+    </div>
+</section>
+
+<!-- Ad: Between Picks -->
+<div style="max-width:1200px;margin:0 auto 24px;padding:0 24px;text-align:center;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8235932614579966" data-ad-slot="auto" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<section class="top-picks">
+    <h2 class="top-picks-title">Best AMCs for Lump Sum (Debt/Hybrid/Index)</h2>
+    <div class="picks-grid">
+        ${lumpPicksHTML}
+    </div>
+</section>
+
+<section class="calc-cta">
+    <div class="calc-cta-box">
+        <h3>Calculate Your SIP Returns</h3>
+        <p>Know your exact future value, total investment, and wealth gained with our free SIP calculator.</p>
+        <a href="/" class="calc-cta-btn">Open SIP Calculator \u2192</a>
+    </div>
+</section>`;
+  }
+
+  // --- Internal links ---
+  const otherAffiliateLinks = affiliateData.pages
+    .filter(p => p.slug !== slug)
+    .map(p => ({
+      href: `/${p.slug}`,
+      label: p.heroTitle,
+      sub: '',
+    }));
+
+  const categoryLinks = Object.keys(CATEGORIES).map(c => ({
+    href: `/${c}-sip-calculator`,
+    label: `${CATEGORIES[c].label} SIP Calculator`,
+  }));
+
+  const links =
+    linksGridHTML('More Comparisons', otherAffiliateLinks) +
+    linksGridHTML('SIP Calculators', categoryLinks);
+
+  // --- FAQ ---
+  const faqItems = faqs.map(f => `
+    <div class="faq-item">
+        <h3>${f.q}</h3>
+        <p>${f.a}</p>
+    </div>`).join('');
+
+  const faqSection = `
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    ${faqItems}
+</section>`;
+
+  // --- Disclaimer ---
+  const disclaimer = `
+<div class="disclaimer">
+    <div class="disclaimer-box">
+        <strong>Disclaimer:</strong> Mutual fund investments are subject to market risks. Read all scheme-related documents carefully before investing. The returns shown on this page are based on historical data and are for reference only. Actual returns may vary based on market conditions and fund performance. We may earn a referral commission when you invest through links on this page, at no extra cost to you. This does not affect our rankings or recommendations. Last verified: ${new Date().toLocaleString('en-IN', { month: 'long', year: 'numeric' })}.
+    </div>
+</div>`;
+
+  const html = buildAffiliatePage({
+    title,
+    description,
+    keywords,
+    canonicalPath: slug,
+    breadcrumb: breadcrumbHTML(bcItems = [
+      { href: '/', label: 'Home' },
+      { label: heroTitle },
+    ]),
+    breadcrumbItems: bcItems,
+    content,
+    faqSection,
+    linksSection: links,
+    disclaimer,
+    jsonLd: faqSchemaJSON(faqs),
+  });
+
+  fs.writeFileSync(path.join(DIST, slug + '.html'), html);
+  allPages.push(slug);
+}
+
 // ─── Sitemap & robots.txt ────────────────────────────────────────────────────
 
 function generateSitemap() {
@@ -1157,6 +1481,11 @@ amcs.forEach(amc => {
   });
 });
 console.log(`   \u2192 ${amcCatAmountCount} AMC+category+amount pages`);
+
+// Generate affiliate comparison pages
+console.log('\uD83D\uDD17 Generating affiliate comparison pages...');
+affiliateData.pages.forEach(page => generateAffiliatePage(page));
+console.log(`   \u2192 ${affiliateData.pages.length} affiliate pages`);
 
 // Generate sitemap and robots.txt
 console.log('\uD83D\uDDFA\uFE0F  Generating sitemap.xml and robots.txt...');
